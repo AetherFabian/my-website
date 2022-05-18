@@ -1,3 +1,9 @@
 from django.db import models
+from django.forms import CharField, DateField, ImageField
+import datetime
 
-# Create your models here.
+class Posts(models.Model):
+    title = CharField(max_length=200)
+    description = models.TextFile()
+    image = ImageField(upload_to='blog/images')
+    date = DateField(datetime.date.today)

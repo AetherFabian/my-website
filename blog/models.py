@@ -3,7 +3,7 @@ from django.db.models.fields import CharField, DateField
 from django.db.models.fields.files import ImageField
 import datetime
 
-class Posts(models.Model):
+class Post(models.Model):
     title = CharField(max_length=200)
     description = models.TextField()
     image = ImageField(upload_to='blog/images')

@@ -1,5 +1,6 @@
 from django.db import models
-from django.forms import CharField, DateField, ImageField
+from django.db.models.fields import CharField, DateField
+from django.db.models.fields.files import ImageField
 import datetime
 
 class Posts(models.Model):

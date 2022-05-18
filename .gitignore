@@ -1,0 +1,10 @@
+## virtual environment
+env/
+## python cache
+__pycache__/
+## visual studio code settings
+.vscode
+## media files
+media/
+## ignore sqlite3
+db.sqlite3

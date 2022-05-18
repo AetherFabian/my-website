@@ -4,6 +4,6 @@ import datetime
 
 class Posts(models.Model):
     title = CharField(max_length=200)
-    description = models.TextFile()
+    description = models.TextField()
     image = ImageField(upload_to='blog/images')
     date = DateField(datetime.date.today)
